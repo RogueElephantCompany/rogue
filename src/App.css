@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-top: 30px;
 }
 
 .App-title {
@@ -41,14 +42,24 @@
 }
 
 #navbar {
-  /* background-color: white; */
+  position: fixed;
+  top: 3px;
   text-align: left;
   padding-left: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
 }
 
 a {
   color: gray;
   margin-right: 35px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .about-bio {
@@ -71,4 +82,33 @@ a {
 .bio-paragraph {
   width: 65%;
   text-align: left;
+}
+
+#contact-form {
+  text-align: left;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.line input {
+  margin-left: 10px;
+}
+
+.notes-box {
+  height: 250px;
+  width: 500px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-input {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
 }

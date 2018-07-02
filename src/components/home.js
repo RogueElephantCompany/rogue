@@ -4,7 +4,7 @@ import { homeParagraphs } from '../constants'
 const Home = () => {
   return (
     <div>
-      <h2>Welcome to the Roge Elephant Company Homepage</h2>
+      <h1>Welcome to the Rogue Elephant Company Homepage</h1>
       {
         homeParagraphs.map(par => <p className="home-paragraph">{par}</p>)
       }
