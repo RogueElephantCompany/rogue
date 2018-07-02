@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.logo {
+  height: 150px;
+}
+
+.App-header {
+  /* background-color: rgba(34, 34, 34, .8); */
+  background-image: url('skyline.jpg');
+  height: 150px;
+  padding: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.App-title {
+  font-size: 3em;
+  width: 100%;
+}
+
+.App-title h1 {
+  align-items: baseline;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#navbar {
+  /* background-color: white; */
+  text-align: left;
+  padding-left: 15px;
+}
+
+a {
+  color: gray;
+  margin-right: 35px;
+}
+
+.about-bio {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.imageName {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-picture {
+  height: 150px;
+  border: solid 1px black;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.bio-paragraph {
+  width: 65%;
+  text-align: left;
+}
