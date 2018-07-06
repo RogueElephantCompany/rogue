@@ -3,21 +3,34 @@ import React from 'react';
 const Contact = () => {
   return (
     <div>
-      <h2>Use the form below to contact us:</h2>
+      <h2>Want to learn more?</h2>
+      <h4>Message us here or email us at info@rogueelephantcompany.com</h4>
       <form>
         <div id="contact-form">
-          <div className="line">
-            Email address:<input type="text" name="contactName" className="contact-input"></input>
+          <div className="line" id="contact-email">
+            <input type="text"
+              className="contact-input"
+              name="contactName"
+              placeholder="YOUR EMAIL ADDRESS*"
+              required={true} ></input>
           </div>
-          <div className="line">
-            Phone number:<input type="text" name="contactPhone" className="contact-input"></input>
+          <div className="line" id="contact-phone">
+            <input type="text"
+              className="contact-input"
+              name="contactPhone"
+              placeholder="YOUR PHONE NUMBER*"
+              required={true}></input>
           </div>
-          <div className="line">
-            <span id="message">Message:</span>
-            <textarea name="contactMessage" className="notes-box" />
+          <div className="line" id="message">
+            <textarea name="contactMessage"
+              className="notes-box"
+              placeholder="YOUR MESSAGE*"
+              required={true} />
           </div>
           <br />
-          <input type="submit" value="Submit" />
+          <div id="buttonHolder">
+            <input type="submit" value="SUBMIT" id="submit-btn" />
+          </div>
         </div>
       </form>
     </div>
