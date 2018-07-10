@@ -97,10 +97,6 @@ a:hover {
   margin-bottom: 8px;
 }
 
-/* .line input {
-  margin-left: 10px;
-} */
-
 .notes-box {
   height: 250px;
   width: 500px;
@@ -128,4 +124,34 @@ textarea {
   height: 2em;
   background: rgba(17, 17, 17, 0.8);
   color: white;
+}
+
+#home-p1 {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 50px;
+  vertical-align: 50%;
+  margin: 10px;
+}
+
+#home-p2 {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  background-image: './map.png';
+  color: black;
+  font-size: 50px;
+  vertical-align: 50%;
+  margin: 10px;
+}
+
+#home-boxes {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }

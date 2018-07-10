@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Navbar, Home, Contact, About } from './components';
-import Routes from './routes';
+import { Navbar /*, Home, Contact, About*/ } from './components';
+import Routes from './routes'
 import logo from './logo.png'
 import './App.css'
 
