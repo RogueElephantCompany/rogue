@@ -13,6 +13,14 @@ const Home = () => {
         time and cost, and ensures the technician will have all the right parts
         when he shows up at your door.
       </p>
+      <p>
+        Repair Database: Easily search for previous repairs, without going
+        through stacks of old receipts.
+      </p>
+      <p>
+        Scheduling: Take a look at our calendar to check for available times,
+        making it easy to know how quickly a technician can come.
+      </p>
       <div id="home-boxes">
         <div id="home-p1" style={{ backgroundImage: `url(${architect})` }}>
           <p>{whatWeDo}</p>
