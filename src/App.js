@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Navbar /*, Home, Contact, About*/ } from './components';
-import Routes from './routes'
-import logo from './logo.png'
-import './App.css'
+import Routes from './routes';
+import logo from './styles/logo.png';
+import './styles/App.css';
 
 class App extends Component {
   render() {
@@ -15,8 +15,8 @@ class App extends Component {
         </header>
         <Routes />
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;

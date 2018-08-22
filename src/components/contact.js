@@ -4,28 +4,34 @@ const Contact = () => {
   return (
     <div>
       <h2>Want to learn more?</h2>
-      <h4>Message us here or email us at info@rogueelephantcompany.com</h4>
+      <h4>Message us here or email us at info@fixiteddie.com</h4>
       <form>
         <div id="contact-form">
           <div className="line" id="contact-email">
-            <input type="text"
+            <input
+              type="text"
               className="contact-input"
               name="contactName"
               placeholder="YOUR EMAIL ADDRESS*"
-              required={true} ></input>
+              required={true}
+            />
           </div>
           <div className="line" id="contact-phone">
-            <input type="text"
+            <input
+              type="text"
               className="contact-input"
               name="contactPhone"
               placeholder="YOUR PHONE NUMBER*"
-              required={true}></input>
+              required={true}
+            />
           </div>
           <div className="line" id="message">
-            <textarea name="contactMessage"
+            <textarea
+              name="contactMessage"
               className="notes-box"
               placeholder="YOUR MESSAGE*"
-              required={true} />
+              required={true}
+            />
           </div>
           <br />
           <div id="buttonHolder">
@@ -34,7 +40,7 @@ const Contact = () => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
 export default Contact;

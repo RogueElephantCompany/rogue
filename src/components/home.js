@@ -1,19 +1,32 @@
-import React from 'react'
-import { whatWeDo, whereWeAre } from '../constants'
-import map from '../map.png'
-import architect from '../architect.jpeg'
+import React from 'react';
+import { whatWeDo, whereWeAre } from '../constants';
+import map from '../styles/map.png';
+import architect from '../styles/architect.jpeg';
 
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to the Rogue Elephant Company Homepage</h1>
+      <h1 style={{ fontSize: '40px' }}>Why Call Eddie?</h1>
+      <p>
+        Remote Diagnostic: A profissional will asses your problem BEFORE coming
+        to your house. This means you will have an accurate estimate for both
+        time and cost, and ensures the technician will have all the right parts
+        when he shows up at your door.
+      </p>
       <div id="home-boxes">
-        <p id="home-p1" style={{ backgroundImage: `url(${architect})` }}>{whatWeDo}</p>
-        <p id="home-p2" style={{ backgroundImage: `url('${map}')` }}>{whereWeAre}</p>
+        <div id="home-p1" style={{ backgroundImage: `url(${architect})` }}>
+          <p>{whatWeDo}</p>
+        </div>
+        <p
+          id="home-p2"
+          style={{ backgroundImage: `url('${map}')`, opacity: 0.6 }}
+        >
+          {whereWeAre}
+        </p>
       </div>
-      <a href="http://www.google.com">Link to Our App</a>
+      <a href="https://fixiteddie-pwa.herokuapp.com/">Link to Our App</a>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
