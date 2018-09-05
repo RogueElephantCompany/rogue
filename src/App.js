@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar /*, Home, Contact, About*/ } from './components';
 import Routes from './routes';
-import logo from './styles/logo.png';
+import Header from './components/header';
 import './styles/App.css';
 
 class App extends Component {
@@ -9,10 +9,6 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <header className="App-header">
-          <h1 className="App-title">The Rogue Elephant Company</h1>
-          <img src={logo} className="logo" alt="logo" />
-        </header>
         <Routes />
       </div>
     );
