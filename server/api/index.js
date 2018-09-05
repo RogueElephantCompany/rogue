@@ -1,9 +1,8 @@
 const router = require('express').Router();
-const emails = require('./emails');
 
 module.exports = router;
 
-// router.use()
+router.use('/contact', require('./contact'));
 
 router.use((req, res, next) => {
   const error = new Error('Not Found');

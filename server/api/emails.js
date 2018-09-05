@@ -1,7 +1,7 @@
 'use strict';
 const nodemailer = require('nodemailer');
 
-const sendEmail = (email, message, phone /*orderId, status*/) => {
+const sendEmail = (email, phone, message /*orderId, status*/) => {
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
