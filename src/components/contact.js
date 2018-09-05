@@ -1,6 +1,8 @@
 import React from 'react';
+// import nodemailer from 'nodemailer';
 
 const Contact = () => {
+  // let transporter = nodemailer.createTransport();
   return (
     <div>
       <h2>Want to learn more?</h2>
