@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Navbar = () => {
   return (
@@ -7,7 +7,7 @@ const Navbar = () => {
       <a href="/about">About</a>
       <a href="/contact">Contact</a>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;
