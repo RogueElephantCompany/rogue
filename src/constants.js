@@ -8,7 +8,7 @@ export const team = [
   {
     name: 'Nick Angelos',
     bio:
-      "Nick has a background in software development and corporate strategy, and is interested in something. He graduated with a B.S. in Economics from Brigham Young University. Nick's responsibilities include project two, project four, and project five.",
+      "Nick has a background in software development and corporate strategy, and is interested in something. He graduated with a B.S. in Economics from Brigham Young University. Nick's responsibilities include software development, operational streamlining, due diligence on acquisition targets.",
     photo: 'location of photo',
   },
 ];
