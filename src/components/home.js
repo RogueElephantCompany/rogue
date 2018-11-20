@@ -1,5 +1,5 @@
 import React from 'react';
-import { whatWeDo, whereWeAre } from '../constants';
+import { whatWeDo, whereWeAre, aboutUs } from '../constants';
 import map from '../styles/map.png';
 import architect from '../styles/architect.jpeg';
 

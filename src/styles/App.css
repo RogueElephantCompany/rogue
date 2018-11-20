@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: auto;
+  width: 60%;
 }
 
 .App-logo {
@@ -153,7 +155,7 @@ textarea {
 
 #home-boxes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-content: center;
   align-items: center;
