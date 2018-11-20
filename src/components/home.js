@@ -33,7 +33,10 @@ const Home = () => {
         </div>
         <p
           id="home-p2"
-          style={{ backgroundImage: `url('${map}')` /*, opacity: 0.6*/ }}
+          style={{
+            backgroundColor: 'rgb(237, 47, 126)',
+            // backgroundImage: `url('${map}')` /*, opacity: 0.6*/
+          }}
         >
           {whereWeAre}
         </p>

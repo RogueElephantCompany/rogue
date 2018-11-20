@@ -22,4 +22,5 @@ export const whatWeDo =
   "Whether you are doing it yourself or scheduling an appointment, home repair and home improvement should be easy. We're here to make that happen.";
 
 export const whereWeAre =
-  'Being strategically located in Chicago ensures we never forget our roots, while maintaining access to all that our country has to offer.';
+  'We currently service neighborhoods on the North and West sides of Chicago, with plans to add additional neighborhoods in the near future.';
+// 'Being strategically located in Chicago ensures we never forget our roots, while maintaining access to all that our country has to offer.';
