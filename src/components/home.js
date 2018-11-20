@@ -8,10 +8,10 @@ const Home = () => {
     <div>
       <h1 style={{ fontSize: '40px' }}>Why Call Eddie?</h1>
       <p>
-        Remote Diagnostic: A profissional will asses your problem BEFORE coming
-        to your house. This means you will have an accurate estimate for both
-        time and cost, and ensures the technician will have all the right parts
-        when he shows up at your door.
+        Remote Diagnostic: A professional will asses your problem BEFORE coming
+        to your house, ensuring you have an accurate estimate for both time and
+        cost, and that the technician will have all the right parts when he
+        shows up at your door.
       </p>
       <p>
         Repair Database: Easily search for previous repairs, without going
@@ -22,7 +22,13 @@ const Home = () => {
         making it easy to know how quickly a technician can come.
       </p>
       <div id="home-boxes">
-        <div id="home-p1" style={{ backgroundImage: `url(${architect})` }}>
+        <div
+          id="home-p1"
+          style={{
+            // backgroundImage: `url(${architect})`
+            backgroundColor: 'rgb(78, 132, 219)',
+          }}
+        >
           <p>{whatWeDo}</p>
         </div>
         <p
