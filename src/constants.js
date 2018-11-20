@@ -15,7 +15,7 @@
 
 export const aboutUs = [
   'Eddie was started because we wanted to create a better customer experience in the home improvement industry. We believe that the home improvement and home repair industries should have access to all the convenience and technology that other industries use. The home improvement industry is a highly fragmented $400B industry, but you can count on Eddie for all your home repairs.',
-  "When your furnace goes out, or your refrigerator needs to be repaired, it can be difficult to find a reputable repairman, schedule an appointemnt, and then miss a day of work while waiting for the technician to come between a four hour block. Once the technician comes to your house, it takes 30 minutes to assess the problem, give you an estimate, and then inform you that he doesn't have the required part in his truck, meaning he will have to come back later in the week, causing you to miss another day of work. We think this process is broken and set out to create a new process this is easy, transparent, and convenient for you, the customer.",
+  "When your furnace goes out, or your refrigerator needs to be repaired, it can be difficult to find a reputable repairman, schedule an appointemnt, and then miss a day of work while waiting for the technician to come between a four hour block. Once the technician comes to your house, it takes 30 minutes to assess the problem, give you an estimate, and then inform you that he doesn't have the required part in his truck, meaning he will have to come back later in the week, causing you to miss another day of work. We think this process is broken and set out to create a new process this is easy, transparent, and convenient for you.",
 ];
 
 export const whatWeDo =
