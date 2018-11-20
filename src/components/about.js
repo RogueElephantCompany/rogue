@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from '../styles/logo.png';
-import silhouette from '../styles/silhouette.jpg';
-import { team, aboutUs } from '../constants';
+// import logo from '../styles/logo.png';
+// import silhouette from '../styles/silhouette.jpg';
+import { /*team,*/ aboutUs } from '../constants';
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
           <p className="about-par">{par}</p>
         ))}
       </div>
-      <div>
+      {/* <div>
         {team.map(person => (
           <div className="about-bio">
             <div className="imageName">
@@ -22,7 +22,7 @@ const About = () => {
             <p className="bio-paragraph">{person.bio}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -51,9 +51,11 @@
   margin-bottom: 20px;
   width: 100%;
   overflow: hidden;
+  /* background-color: rgb(78, 132, 219); */
 }
 
 a {
+  /* color: white; */
   color: gray;
   margin-right: 35px;
   text-decoration: none;
@@ -159,4 +161,8 @@ textarea {
   justify-content: space-around;
   align-content: center;
   align-items: center;
+}
+
+#app-link-box {
+  margin-top: 20px;
 }

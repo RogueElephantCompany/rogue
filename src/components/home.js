@@ -1,5 +1,5 @@
 import React from 'react';
-import { whatWeDo, whereWeAre, aboutUs } from '../constants';
+import { whatWeDo, whereWeAre } from '../constants';
 import map from '../styles/map.png';
 import architect from '../styles/architect.jpeg';
 
@@ -32,7 +32,9 @@ const Home = () => {
           {whereWeAre}
         </p>
       </div>
-      <a href="https://fixiteddie-pwa.herokuapp.com/">Link to Our App</a>
+      <div id="app-link-box">
+        <a href="https://fixiteddie-pwa.herokuapp.com/">Link to Our App</a>
+      </div>
     </div>
   );
 };
