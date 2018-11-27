@@ -177,15 +177,16 @@ textarea {
   background-color: rgb(78, 132, 219);
   width: 60%;
   float: right;
-  margin: 10px 0px;
+  margin: 15px 0px;
   font-size: 30px;
   border-radius: 15px;
+  /* text-align: left; */
 }
 .reason-box2 {
   background-color: rgb(237, 47, 126);
   width: 60%;
   float: left;
-  margin: 10px 0px;
+  margin: 15px 0px;
   font-size: 30px;
   border-radius: 15px;
 }

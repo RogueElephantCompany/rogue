@@ -47,7 +47,7 @@ const Home = () => {
         making it easy to know how quickly a technician can come.
       </p> */}
       </div>
-      <div id="home-boxes">
+      {/* <div id="home-boxes">
         <div
           id="home-p1"
           style={{
@@ -61,12 +61,12 @@ const Home = () => {
           id="home-p2"
           style={{
             backgroundColor: 'rgb(237, 47, 126)',
-            // backgroundImage: `url('${map}')` /*, opacity: 0.6*/
+            // backgroundImage: `url('${map}')`
           }}
         >
           {whereWeAre}
         </p>
-      </div>
+      </div> */}
       <div id="app-link-box">
         <a href="https://fixiteddie-pwa.herokuapp.com/">Link to Our App</a>
       </div>
