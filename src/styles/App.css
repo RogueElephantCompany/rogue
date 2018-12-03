@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 80%;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -51,7 +51,7 @@
   top: 3px;
   text-align: left;
   padding: 10px;
-  height: 20px;
+  height: 25px;
   overflow: hidden;
   background-color: rgb(78, 132, 219);
   border-radius: 5px;
@@ -192,5 +192,9 @@ textarea {
 }
 
 #app-link-box {
+  margin-top: 20px;
+}
+
+.footer {
   margin-top: 20px;
 }
