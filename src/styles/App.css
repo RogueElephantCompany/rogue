@@ -188,7 +188,8 @@ textarea {
 }
 
 .reason-box1 {
-  background-color: rgb(78, 132, 219);
+  /* background-color: rgb(78, 132, 219); */
+  border: solid black 2px;
   width: 50%;
   padding: 1px;
   margin: auto;
@@ -204,7 +205,8 @@ textarea {
 }
 
 .reason-box2 {
-  background-color: rgb(237, 47, 126);
+  /* background-color: rgb(237, 47, 126); */
+  border: solid black 2px;
   width: 50%;
   padding: 1px;
   margin: auto;
