@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div class="footer">
+    <div className="footer">
       <h6>Copyright © 2018 Rogue Elephant Company</h6>
     </div>
   );
