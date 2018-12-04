@@ -89,6 +89,12 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.about-par {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .imageName {
   display: flex;
   flex-direction: column;
@@ -116,7 +122,7 @@ a:hover {
   align-content: flex-start;
   align-items: center;
   text-align: center;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .notes-box {
@@ -238,4 +244,5 @@ textarea {
 
 .page-header {
   margin-top: 10px;
+  margin-bottom: 5px;
 }
