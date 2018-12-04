@@ -65,7 +65,7 @@ img {
   overflow: hidden;
   background-color: rgb(78, 132, 219);
   /* border-radius: 5px; */
-
+  font-weight: bold;
 }
 
 #navbar a {
@@ -189,7 +189,7 @@ textarea {
 
 .reason-box1 {
   /* background-color: rgb(78, 132, 219); */
-  border: solid black 2px;
+  /* border: solid black 2px; */
   width: 50%;
   padding: 1px;
   margin: auto;
@@ -206,7 +206,7 @@ textarea {
 
 .reason-box2 {
   /* background-color: rgb(237, 47, 126); */
-  border: solid black 2px;
+  /* border: solid black 2px; */
   width: 50%;
   padding: 1px;
   margin: auto;
@@ -234,4 +234,8 @@ textarea {
   /* height: auto; */
   width: 40%;
   margin: auto;
+}
+
+.page-header {
+  margin-top: 10px;
 }

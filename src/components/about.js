@@ -6,7 +6,7 @@ import { /*team,*/ aboutUs } from '../constants';
 const About = () => {
   return (
     <div>
-      <h2>About Us:</h2>
+      <h2 className="page-header">About Us:</h2>
       <div>
         {aboutUs.map(par => (
           <p className="about-par">{par}</p>

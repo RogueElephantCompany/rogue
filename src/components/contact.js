@@ -5,7 +5,7 @@ const Contact = () => {
   // let transporter = nodemailer.createTransport();
   return (
     <div>
-      <h2>Want to learn more?</h2>
+      <h2 className="page-header">Want to learn more?</h2>
       <h4>Message us here or email us at info@fixiteddie.com</h4>
       <form>
         <div id="contact-form">
