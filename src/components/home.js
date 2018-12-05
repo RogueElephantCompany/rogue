@@ -1,7 +1,7 @@
 import React from 'react';
-import { whatWeDo, whereWeAre } from '../constants';
-import map from '../styles/map.png';
-import architect from '../styles/architect.jpeg';
+// import { whatWeDo, whereWeAre } from '../constants';
+// import map from '../styles/map.png';
+// import architect from '../styles/architect.jpeg';
 import laptop from '../styles/laptop.png';
 import van from '../styles/van.png';
 import dollar from '../styles/dollar.png';
