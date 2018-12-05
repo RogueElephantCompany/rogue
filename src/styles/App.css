@@ -158,7 +158,8 @@ textarea {
 
 #home-header {
   font-size: 60px;
-  color: rgb(237, 47, 126);
+  /* color: rgb(237, 47, 126); */
+  color: black;
   margin: 10px;
 }
 
