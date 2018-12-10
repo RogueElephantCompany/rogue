@@ -6,16 +6,22 @@ class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      email: '',
-      phone: '',
-      message: '',
+      contactName: '',
+      contactPhone: '',
+      contactMessage: '',
     };
   }
 
   handleSubmit = event => {
     event.preventDefault();
     console.log('Submit button clicked');
-    console.log('Event target: ', event.target);
+    console.log(this.state);
+  };
+
+  handleChange = event => {
+    let { name, value } = event.target;
+    console.log(name, value);
+    this.setState({ [name]: value });
   };
 
   render() {
@@ -32,6 +38,7 @@ class Contact extends Component {
                 name="contactName"
                 placeholder="YOUR EMAIL ADDRESS*"
                 required={true}
+                onChange={this.handleChange}
               />
             </div>
             <div className="line" id="contact-phone">
@@ -41,6 +48,7 @@ class Contact extends Component {
                 name="contactPhone"
                 placeholder="YOUR PHONE NUMBER*"
                 required={true}
+                onChange={this.handleChange}
               />
             </div>
             <div className="line" id="message">
@@ -49,6 +57,7 @@ class Contact extends Component {
                 className="notes-box"
                 placeholder="YOUR MESSAGE*"
                 required={true}
+                onChange={this.handleChange}
               />
             </div>
             <br />
