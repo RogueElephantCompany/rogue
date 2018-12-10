@@ -14,13 +14,11 @@ class Contact extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log('Submit button clicked');
     console.log(this.state);
   };
 
   handleChange = event => {
     let { name, value } = event.target;
-    console.log(name, value);
     this.setState({ [name]: value });
   };
 
