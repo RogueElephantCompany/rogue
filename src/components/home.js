@@ -3,6 +3,7 @@ import React from 'react';
 // import map from '../styles/map.png';
 // import architect from '../styles/architect.jpeg';
 import laptop from '../styles/laptop.png';
+import phone from '../styles/phone.png';
 import van from '../styles/van.png';
 import dollar from '../styles/dollar.png';
 import receipt from '../styles/receipt.png';
@@ -22,7 +23,7 @@ const Home = () => {
       <div>
         <div className="home-row">
           <div className="home-icons">
-            <img src={laptop} alt="laptop" />
+            <img src={phone} alt="laptop" />
           </div>
           <div className="reason-box1">
             <p>
@@ -57,7 +58,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="home-row">
+        {/* <div className="home-row">
           <div className="reason-box2">
             <p>
               <strong>Repair Database:</strong> Easily search for previous
@@ -67,7 +68,7 @@ const Home = () => {
           <div className="home-icons">
             <img src={receipt} alt="receipt" />
           </div>
-        </div>
+        </div> */}
         {/* <p>
         Scheduling: Take a look at our calendar to check for available times,
         making it easy to know how quickly a technician can come.
