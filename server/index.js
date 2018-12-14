@@ -7,7 +7,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const db = require('./db');
 const sessionStore = new SequelizeStore({ db });
 const PORT = process.env.PORT || 8080;
-const app = express.app();
+const app = express();
 module.exports = app;
 
 // if (process.env.NODE_ENV !== 'production') require('../secrets')
@@ -62,7 +62,7 @@ const syncDB = () => db.sync();
 if (require.main === module) {
   sessionStore
     .sync()
-    .then(syncDb)
+    .then(syncDB)
     .then(createApp)
     .then(startListening);
 } else {
