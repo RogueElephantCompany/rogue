@@ -9,6 +9,7 @@ export const createEmail = message => ({ type: ADD_EMAIL, message });
 
 // THUNK CREATORS
 export const addEmail = newMessage => {
+  console.log('newMessage: ', newMessage);
   return function thunk(dispatch) {
     const options = {
       method: 'POST',
@@ -18,6 +19,7 @@ export const addEmail = newMessage => {
     };
     return axios(options)
       .then(message => {
+        console.log(message);
         dispatch(createEmail(message));
       })
       .catch(err => console.error(err));
@@ -30,6 +32,8 @@ const emailReducer = (state = [], action) => {
     case ADD_EMAIL: {
       return [...state, action.message];
     }
+    default:
+      return state;
   }
 };
 

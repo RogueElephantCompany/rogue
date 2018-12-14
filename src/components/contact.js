@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import nodemailer from 'nodemailer';
+import { addEmail } from '../reducers/email';
 
 class Contact extends Component {
-  // let transporter = nodemailer.createTransport();
   constructor() {
     super();
     this.state = {
@@ -15,6 +14,7 @@ class Contact extends Component {
   handleSubmit = event => {
     event.preventDefault();
     console.log(this.state);
+    addEmail(this.state);
   };
 
   handleChange = event => {
