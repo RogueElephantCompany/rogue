@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const sendEmail = require('./emails');
+const sendEmail = require('./messages');
 
 router.post('/', (req, res, next) => {
   console.log(req.body);
