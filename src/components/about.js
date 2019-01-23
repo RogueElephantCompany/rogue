@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <h2 className="page-header">About Us:</h2>
-      <div style={{ margin: '100px' }}>
+      <div style={{ margin: '70px' }}>
         {aboutUs.map(par => (
           <p className="about-par">{par}</p>
         ))}
