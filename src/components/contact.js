@@ -5,7 +5,7 @@ class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      sent: true,
+      sent: false,
       contactName: '',
       contactPhone: '',
       contactMessage: '',
@@ -15,6 +15,7 @@ class Contact extends Component {
   handleSubmit = event => {
     event.preventDefault();
     addEmail(this.state);
+    this.setState({ sent: true });
   };
 
   handleChange = event => {
@@ -74,8 +75,8 @@ class Contact extends Component {
           </div>
         ) : (
           <div>
-            <h1 style={{ marginTop: '300px' }}>Thank you for contacting us!</h1>
-            <p style={{ marginBottom: '300px' }}>
+            <h1 style={{ marginTop: '225px' }}>Thank you for contacting us!</h1>
+            <p style={{ marginBottom: '225px' }}>
               We will respond as soon as we are able...
             </p>
           </div>
