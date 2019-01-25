@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
+const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const volleyball = require('volleyball');
 const compression = require('compression');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -14,7 +16,9 @@ module.exports = app;
 
 const createApp = () => {
   // logging middleware
-  app.use(morgan('dev'));
+  // app.use(morgan('dev'));
+
+  app.use(volleyball);
 
   // body parsing middleware
   app.use(bodyParser.json());

@@ -19,7 +19,7 @@ export const addEmail = newMessage => {
     };
     return axios(options)
       .then(message => {
-        console.log(message);
+        console.log('message: ', message);
         dispatch(createEmail(message));
       })
       .catch(err => console.error(err));

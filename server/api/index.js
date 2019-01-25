@@ -1,7 +1,5 @@
 const router = require('express').Router();
 
-module.exports = router;
-
 router.use('/contact', require('./contact'));
 
 router.use((req, res, next) => {
@@ -9,3 +7,5 @@ router.use((req, res, next) => {
   error.status = 404;
   next(error);
 });
+
+module.exports = router;
