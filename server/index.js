@@ -11,14 +11,14 @@ const sessionStore = new SequelizeStore({ db });
 const PORT = process.env.PORT || 8080;
 const app = express();
 module.exports = app;
+// console.log('morgan(dev): ', morgan('dev'));
 
 // if (process.env.NODE_ENV !== 'production') require('../secrets')
 
 const createApp = () => {
   // logging middleware
-  // app.use(morgan('dev'));
-
-  app.use(volleyball);
+  app.use(morgan('dev'));
+  // app.use(volleyball);
 
   // body parsing middleware
   app.use(bodyParser.json());
@@ -26,8 +26,9 @@ const createApp = () => {
 
   // compression middleware
   app.use(compression());
-  //api routes
-  app.use('/api', require('./api'));
+
+  // //api routes
+  // app.use('/api', require('./api'));
 
   // static file-serving middleware
   app.use(express.static(path.join(__dirname, '..', 'public')));
