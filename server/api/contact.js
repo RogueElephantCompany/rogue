@@ -11,7 +11,6 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-  console.log('in the post route: ');
   console.log('here is req.body: ', req.body);
   const { contactName, contactPhone, contactMessage } = req.body;
   sendEmail(contactName, contactPhone, contactMessage)
