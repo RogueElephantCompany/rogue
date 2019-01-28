@@ -17,6 +17,7 @@ export const addEmail = newMessage => {
       data: newMessage,
       url: '/api/contact',
     };
+    console.log('Here are my options: ', options);
     return axios(options)
       .then(message => {
         console.log('message: ', message);
@@ -26,8 +27,22 @@ export const addEmail = newMessage => {
   };
 };
 
+// export const addEmail = newMessage => {
+//   console.log('newMessage: ', newMessage);
+//   return dispatch => {
+//     axios
+//       .post('/api/contact', newMessage)
+//       .then(res => {
+//         console.log(res);
+//         dispatch(createEmail(res.data));
+//       })
+//       .catch(err => console.error(err));
+//   };
+// };
+
 // REDUCER
 const emailReducer = (state = [], action) => {
+  console.log('in the switch');
   switch (action.type) {
     case ADD_EMAIL: {
       return [...state, action.message];

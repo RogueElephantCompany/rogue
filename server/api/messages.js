@@ -51,7 +51,8 @@ const sendEmail = (email, phone, message /*orderId, status*/) => {
     // Cancelled: cancelled
   };
 
-  const action = actions[status];
+  // const action = actions[status];
+  const action = actions['Created'];
 
   transporter.sendMail(action, (error, info) => {
     console.log(email, action);
