@@ -3,7 +3,6 @@ const { Messages } = require('../db/models');
 const sendEmail = require('./messages');
 
 router.get('/', (req, res, next) => {
-  console.log(req.body);
   Messages.findAll()
     .then(messages => {
       res.json(messages);
