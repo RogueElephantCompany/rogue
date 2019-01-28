@@ -1,7 +1,7 @@
 'use strict';
 const nodemailer = require('nodemailer');
 
-const sendEmail = (email, phone, message /*orderId, status*/) => {
+const sendEmail = (email, phone, message, status /*orderId*/) => {
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
@@ -14,45 +14,18 @@ const sendEmail = (email, phone, message /*orderId, status*/) => {
 
   // setup email data with unicode symbols
   let created = {
-    from: `${email}`, //'"ThreeFeetTeam" `threefeetfullstack@gmail.com', // sender address
+    from: `The Website ${email}`, //'"ThreeFeetTeam" `threefeetfullstack@gmail.com', // sender address
     to: ['nick@fixiteddie.com'], //email, // list of receivers
     subject: 'Email from Website', //`Order #${orderId} - Purchased`, // Subject line
     text: `Email from ${email} \n ${phone} \n ${message}`, // plain text body
     // html: '<b>Hello world?</b>' // html body
   };
-  // let processing = {
-  //   from: '"ThreeFeetTeam" `threefeetfullstack@gmail.com', // sender address
-  //   to: email, // list of receivers
-  //   subject: `Order #${orderId} - Processing`, // Subject line
-  //   text: `Hey ${email}! Just FYI, Order ${orderId} is processing. Thanks!`, // plain text body
-  //   // html: '<b>Hello world?</b>' // html body
-  // };
-
-  // let shipped = {
-  //   from: '"ThreeFeetTeam" `threefeetfullstack@gmail.com', // sender address
-  //   to: email, // list of receivers
-  //   subject: `Order #${orderId} - Shipped`, // Subject line
-  //   text: `Hey ${email}! Just FYI, ${orderId} has shipped. Thanks!`, // plain text body
-  //   // html: '<b>Hello world?</b>' // html body
-  // };
-
-  // let cancelled = {
-  //   from: '"ThreeFeetTeam" `threefeetfullstack@gmail.com', // sender address
-  //   to: email, // list of receivers
-  //   subject: `Order #${orderId} - Cancelled`, // Subject line
-  //   text: `Hey ${email}! Just FYI, ${orderId} was cancelled. Thanks!`, // plain text body
-  //   // html: '<b>Hello world?</b>' // html body
-  // };
 
   const actions = {
     Created: created,
-    // Processing: processing,
-    // Completed: shipped,
-    // Cancelled: cancelled
   };
 
-  // const action = actions[status];
-  const action = actions['Created'];
+  const action = actions[status];
 
   transporter.sendMail(action, (error, info) => {
     console.log(email, action);

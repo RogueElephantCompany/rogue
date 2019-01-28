@@ -14,7 +14,8 @@ class Contact extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    addEmail(this.state);
+    const { contactName, contactPhone, contactMessage } = this.state;
+    addEmail({ contactName, contactPhone, contactMessage });
     this.setState({ sent: true });
   };
 

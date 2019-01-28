@@ -11,10 +11,12 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-  console.log('here is req.body: ', req.body);
+  console.log('in the post route');
   const { contactName, contactPhone, contactMessage } = req.body;
-  sendEmail(contactName, contactPhone, contactMessage)
+  Messages.create({ contactName, contactPhone, contactMessage })
     .then(data => {
+      console.log(data);
+      sendEmail(contactName, contactPhone, contactMessage, 'Created');
       res.json(data);
     })
     .catch(next);
