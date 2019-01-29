@@ -17,7 +17,6 @@ class Contact extends Component {
     event.preventDefault();
     const { contactName, contactPhone, contactMessage } = this.state;
     const { createMessage } = this.props;
-    // addEmail({ contactName, contactPhone, contactMessage });
     createMessage({ contactName, contactPhone, contactMessage });
     this.setState({ sent: true });
   };
@@ -89,8 +88,6 @@ class Contact extends Component {
     );
   }
 }
-
-// export default Contact;
 
 const mapState = state => ({ state });
 
