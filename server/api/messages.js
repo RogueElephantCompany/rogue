@@ -14,10 +14,10 @@ const sendEmail = (email, phone, message, status /*orderId*/) => {
 
   // setup email data with unicode symbols
   let created = {
-    from: `The Website ${email}`, //'"ThreeFeetTeam" `threefeetfullstack@gmail.com', // sender address
+    from: `The Website ${email}`, // sender address
     to: ['nick@fixiteddie.com'], //email, // list of receivers
     subject: 'Email from Website', //`Order #${orderId} - Purchased`, // Subject line
-    text: `Email from ${email} \n ${phone} \n ${message}`, // plain text body
+    text: `Email from ${email} \nPhone Number: ${phone} \n${message}`, // plain text body
     // html: '<b>Hello world?</b>' // html body
   };
 
@@ -28,7 +28,6 @@ const sendEmail = (email, phone, message, status /*orderId*/) => {
   const action = actions[status];
 
   transporter.sendMail(action, (error, info) => {
-    console.log(email, action);
     if (error) {
       return console.log(error);
     }
