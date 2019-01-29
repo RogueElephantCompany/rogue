@@ -49,10 +49,17 @@ export const addEmail = newMessage => {
       })
       .catch(err => console.error(err));
   };
+  //   axios
+  //     .post('/api/contact', newMessage)
+  //     .then(res => {
+  //       console.log(res);
+  //     })
+  //     .catch(err => console.error(err));
 };
 
 // REDUCER
 const emailReducer = (state = [], action) => {
+  console.log('in the switch now!');
   switch (action.type) {
     case ADD_EMAIL: {
       return [...state, action.message];

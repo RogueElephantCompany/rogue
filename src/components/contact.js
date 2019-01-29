@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { addEmail } from '../reducers/email';
+import { connect } from 'react-redux';
 
 class Contact extends Component {
   constructor() {
@@ -15,7 +16,9 @@ class Contact extends Component {
   handleSubmit = event => {
     event.preventDefault();
     const { contactName, contactPhone, contactMessage } = this.state;
-    addEmail({ contactName, contactPhone, contactMessage });
+    const { createMessage } = this.props;
+    // addEmail({ contactName, contactPhone, contactMessage });
+    createMessage({ contactName, contactPhone, contactMessage });
     this.setState({ sent: true });
   };
 
@@ -87,4 +90,15 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+// export default Contact;
+
+const mapState = state => ({ state });
+
+const mapDispatch = dispatch => ({
+  createMessage: message => dispatch(addEmail(message)),
+});
+
+export default connect(
+  mapState,
+  mapDispatch
+)(Contact);
