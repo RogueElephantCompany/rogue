@@ -34,5 +34,6 @@
       "/api": {
       "target": "http://localhost:8080"
       }
-  }
+  },
+  "heroku-postbuild": "yarn build"
 }
