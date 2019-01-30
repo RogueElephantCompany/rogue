@@ -28,12 +28,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+  "heroku-postbuild": "yarn build",
     "eject": "react-scripts eject"
   },
   "proxy": {
       "/api": {
       "target": "http://localhost:8080"
       }
-  },
-  "heroku-postbuild": "yarn build"
+    }
 }
