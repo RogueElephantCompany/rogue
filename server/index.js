@@ -27,16 +27,16 @@ const createApp = () => {
   // compression middleware
   app.use(compression());
 
-  //get request to serve to production server
-  // app.get('*', (req, res) => {
-  //   res.sendFile(path.join(__dirname, '..', 'build/index.html'));
-  // });
-
   //api routes
   app.use('/api', require('./api'));
 
   // static file-serving middleware
   app.use(express.static(path.join(__dirname, '..', 'build')));
+
+  //get request to serve to production server
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'build/index.html'));
+  });
 
   // any remaining requests with an extension (.js, .css, etc.) send 404
   app.use((req, res, next) => {
