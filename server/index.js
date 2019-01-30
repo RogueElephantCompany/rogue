@@ -27,8 +27,11 @@ const createApp = () => {
   //api routes
   app.use('/api', require('./api'));
 
-  // static file-serving middleware
+  // static file-serving middleware for prod
   app.use(express.static(path.join(__dirname, '..', 'build')));
+
+  // static file-serving middleware for dev
+  // app.use(express.static(path.join(__dirname, '..', 'public')));
 
   //get request to serve to production server
   app.get('*', (req, res) => {
