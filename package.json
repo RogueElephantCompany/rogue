@@ -9,6 +9,7 @@
     "connect-session-sequelize": "^6.0.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
+    "http": "^0.0.0",
     "morgan": "^1.9.1",
     "nodemailer": "^4.7.0",
     "pg": "^7.7.1",
@@ -28,12 +29,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-  "heroku-postbuild": "yarn build",
+    "heroku-postbuild": "yarn build",
     "eject": "react-scripts eject"
   },
   "proxy": {
-      "/api": {
+    "/api": {
       "target": "http://localhost:8080"
-      }
     }
+  }
 }
