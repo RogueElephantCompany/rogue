@@ -4,7 +4,7 @@ import http from 'http';
 const Footer = () => {
   setInterval(() => {
     http.get('http://www.fixmyzip.com');
-  }, 30000);
+  }, 300000);
 
   return (
     <div className="footer">
